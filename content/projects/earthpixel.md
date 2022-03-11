@@ -1,6 +1,6 @@
 +++
-title = "Earthpixel (complete)"
-description = "a minecraft server that recreates planet earth"
+title = "Earthpixel"
+description = "A minecraft server that recreates planet earth"
 date = 2021-10-11
 +++
 

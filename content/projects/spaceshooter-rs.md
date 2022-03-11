@@ -1,6 +1,6 @@
 +++
 title = "ascii-spaceshooter-rs (ongoing)"
-description = "A ascii game in space"
+description = "Spaceshooter video game taking place in space"
 date = 2022-03-01
 +++
 
