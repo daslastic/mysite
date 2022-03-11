@@ -13,24 +13,32 @@
     src:
      url(fonts/montserrat.ttf);
 }
+
 :root {
     --text_color: white; 
-    --site_bg: rgb(44, 0, 44);
-    //--bg: linear-gradient(45deg, rgba(0, 0, 0, 0.37) 0%, rgb(0, 0, 0) 100%) fixed;
-    --bg: #000000;
+    --site_bg: rgb(10, 0, 44);
+    //--site_bg: rgb(44, 0, 44);
+    --site_bg: linear-gradient(to right, #24243e, #302b63, #24243e);;
+    --bg: linear-gradient(45deg, rgba(0, 0, 0, 0.37) 0%, rgb(0, 0, 0) 100%) fixed;
+    //--bg: #000000;
     --accent: rgb(137, 230, 168);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 h1, h2 {
     @include bold;
 }
-p, h3, span, a {
+p, h3, a {
     @include regular;
 }
 
 html {
     background: var(--site_bg);
-    display: flex;
+    background-color: black;
+    @include regular;
 }
 
 body {
@@ -39,8 +47,8 @@ body {
     max-width: 58em;
     margin: 1em auto;
     padding: 1em;
-    display: flex;
     width: 100%;
+    display: flex;
 }
 
 html {
@@ -64,16 +72,21 @@ h3 {
 p, span {
     font-size: .9em;
     line-height: 1.5em;
-    margin: 1.8em 0;
+}
+
+small {
+    font-size: .75em;
+    @include regular;
 }
 
 p {
     text-indent: 3em;
-}
+    margin: 1.8em 0;}
 
 a {
     color: lightblue;
     line-height: 1.7em;
+    text-decoration: none;
     font-size: .9em;
 }
 
@@ -82,16 +95,34 @@ hr {
     margin: 1em 0;
 }
 
-h1:first-child, h2:first-child, h3:first-child, p:first-child {
-    margin-top:  0;
+h1:first-child, h2:first-child, h3:first-child, p:first-child, ul:first-child {
+    margin-top: 0;
 }
 
-h1:last-child, h2:last-child, h3:last-child, p:last-child {
+h1:last-child, h2:last-child, h3:last-child, p:last-child, ul:last-child {
     margin-bottom: 0;
 }
 
 .highlight {
     color: var(--accent);
+}
+
+// scroll
+::-webkit-scrollbar {
+    display: block;
+    width: 10em;
+    overflow: auto;
+    height: .7em;
+}
+
+::-webkit-scrollbar {
+    width: .7em;
+    background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: .5em;
 }
 
 @import "base";

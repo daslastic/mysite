@@ -1,13 +1,23 @@
 aside {
-    margin: 2em 1.5em 0 0;
+    margin: 1.5em 0 0 0;
+    position: fixed;
 }
 
 #root {
     background: var(--bg);
-    padding: 1.5em 2em;
+    padding: 2em;
     border-radius: 1.5em;
-    margin: 1em;
     width: 100%;
+    margin-left: 12em;
+}
+
+.title {
+    text-align: center;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
 }
 
 p {
@@ -30,6 +40,10 @@ ul.nav, ul.column {
     list-style-type: none;
 }
 
+ul.nav a {
+    text-decoration: underline;
+}
+
 ul.column {
     li {
         display: inline-block;
@@ -45,10 +59,11 @@ ul.column {
     body {
         flex-direction: column-reverse;
         margin-bottom: 6em;
+        padding: .5em;
         
         aside {
             border-radius: .5em;
-            padding: .5em;
+            padding: 0.5em;
             position: fixed;
             bottom: 0;
             left: 0;
@@ -58,7 +73,7 @@ ul.column {
             margin-right: 0;
 
             h1 {
-                margin-bottom: .5em;
+                margin-bottom: 0;
             }
             .social {
                 display: none;
@@ -67,6 +82,7 @@ ul.column {
 
         #root {
             margin: 0;
+            padding: 1.5em;
         }
 
         ul.nav {
