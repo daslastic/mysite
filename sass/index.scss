@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: poppins;
-    src: url(fonts/poppins-bold.ttf);
+    src: url(fonts/poppins.ttf);
 }
 @font-face {
     font-family: montserrat;
@@ -36,10 +36,11 @@ html {
 body {
     color: var(--text_color);
     margin: 0;
-    max-width: 60em;
+    max-width: 58em;
     margin: 1em auto;
     padding: 1em;
     display: flex;
+    width: 100%;
 }
 
 html {
@@ -52,6 +53,7 @@ h1 {
 
 h2 {
     font-size: 1.2em;
+    margin: 2em 0 1em 0;
 }
 
 h3 {
@@ -93,38 +95,3 @@ h1:last-child, h2:last-child, h3:last-child, p:last-child {
 }
 
 @import "base";
-@media (max-width: 1000px) {
-    html {
-        font-size: 1.2em;
-    }
-
-    body {
-        flex-direction: column-reverse;
-
-
-        aside {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            h1 {
-                margin: 0;
-            }
-
-            .social {
-                display: none;
-            }
-        }
-
-        #root {
-            margin: 0;
-        }
-
-        ul.nav {
-            li {
-                display: inline-block;
-                margin-left: 1em;
-            }
-        }
-
-    }
-}

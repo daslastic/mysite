@@ -7,6 +7,7 @@ aside {
     padding: 1.5em 2em;
     border-radius: 1.5em;
     margin: 1em;
+    width: 100%;
 }
 
 p {
@@ -33,5 +34,50 @@ ul.column {
     li {
         display: inline-block;
         margin-right: 1em;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 1.2em;
+    }
+
+    body {
+        flex-direction: column-reverse;
+        margin-bottom: 6em;
+        
+        aside {
+            border-radius: .5em;
+            padding: .5em;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+            text-align: center;
+            margin-right: 0;
+
+            h1 {
+                margin-bottom: .5em;
+            }
+            .social {
+                display: none;
+            }
+        }
+
+        #root {
+            margin: 0;
+        }
+
+        ul.nav {
+            li {
+                display: inline-block;
+            }
+
+            li:not(:last-child) {
+                margin-right: 1.3em;
+            }
+        }
+
     }
 }
