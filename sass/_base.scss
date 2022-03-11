@@ -5,7 +5,7 @@ aside {
 
 #root {
     background: var(--bg);
-    padding: 2em;
+    padding: 1.5em;
     border-radius: 1.5em;
     width: 100%;
     margin-left: 12em;
@@ -13,18 +13,6 @@ aside {
 
 .title {
     text-align: center;
-}
-
-.blog {
-    display: flex;
-    justify-content: space-between;
-}
-
-p {
-    img {
-        margin-right: 1em;
-        border-radius: .5em;
-    }
 }
 
 .table {
@@ -40,10 +28,6 @@ ul.nav, ul.column {
     list-style-type: none;
 }
 
-ul.nav a {
-    text-decoration: underline;
-}
-
 ul.column {
     li {
         display: inline-block;
@@ -51,9 +35,35 @@ ul.column {
     }
 }
 
+.blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hr {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 1.5em 0;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: .05em;
+        left: 0;
+        top: 50%;
+        background-color: white;
+        opacity: .2;
+    }
+}
+
+section {
+    margin-top: 2em;
+}
+
 @media (max-width: 1000px) {
     html {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     body {
@@ -64,13 +74,12 @@ ul.column {
         aside {
             border-radius: .5em;
             padding: 0.5em;
-            position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
 
             text-align: center;
-            margin-right: 0;
+            background-color: black;
 
             h1 {
                 margin-bottom: 0;

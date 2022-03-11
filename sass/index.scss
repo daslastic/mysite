@@ -18,9 +18,10 @@
     --text_color: white; 
     --site_bg: rgb(10, 0, 44);
     //--site_bg: rgb(44, 0, 44);
-    --site_bg: linear-gradient(to right, #24243e, #302b63, #24243e);;
-    --bg: linear-gradient(45deg, rgba(0, 0, 0, 0.37) 0%, rgb(0, 0, 0) 100%) fixed;
-    //--bg: #000000;
+    //--site_bg: linear-gradient(to right, #24243e, #302b63, #24243e);
+    --site_bg: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    //--bg: #010101;
+    --bg: linear-gradient(45deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 1) 100%) fixed;
     --accent: rgb(137, 230, 168);
 }
 
@@ -52,16 +53,32 @@ body {
 }
 
 html {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 h1 {
     font-size: 1.5em;
+    margin: 0.5em 0;
 }
 
 h2 {
     font-size: 1.2em;
-    margin: 2em 0 1em 0;
+    margin: 1em 0 .4em 0;
+    &.highlight {
+        position: relative;
+        color: var(--text_color);
+        margin-bottom: 2em;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -.5em;
+            left: 0;
+            width: 2em;
+            background-color: white;
+            border-radius: 1em;
+            height: .1em;
+        }
+    }
 }
 
 h3 {
@@ -70,8 +87,7 @@ h3 {
 }
 
 p, span {
-    font-size: .9em;
-    line-height: 1.5em;
+    line-height: 1.7em;
 }
 
 small {
@@ -80,19 +96,29 @@ small {
 }
 
 p {
-    text-indent: 3em;
-    margin: 1.8em 0;}
+    //text-indent: 3em;
+    font-size: .9em;
+    margin: 1.8em 0;
+}
 
 a {
-    color: lightblue;
+    color: rgb(114, 227, 255);
     line-height: 1.7em;
-    text-decoration: none;
     font-size: .9em;
+    text-decoration: none;
 }
 
 hr {
-    opacity: .1;
-    margin: 1em 0;
+    margin: 1em 0 !important;                                                                                                                                                     
+    opacity: .2;
+}
+
+br {
+    height: .1em;
+}
+
+img {
+    width: 100%;
 }
 
 h1:first-child, h2:first-child, h3:first-child, p:first-child, ul:first-child {

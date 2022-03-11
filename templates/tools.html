@@ -10,8 +10,7 @@
 <ul class="nav">
     {% for page in section.pages %}
     <span class="hr">{{ page.date }}</span>
-    <h2>{{ page.title }}</h2>
-    <li><a href="{{ page.permalink | safe }}">{{ page.description }}</a></li>
+    <h2>{{ page.title }}:</h2><span>{{ page.description }}</span>
     {{ page.content | safe }}
     {% endfor %}
 </ul>
