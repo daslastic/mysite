@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="title">
+    {{ section.title }}
+</h1>
+<hr>
+
+<form name="contact" method="POST" netlify>
+
+    <div class="table">
+        <div>
+            <label for="name">Name</label>
+            <input name="name" id="name" type="text" required>
+        </div>
+        <div>
+            <label for="email">E-Mail</label>
+            <input name="email" id="email" type="email" required>
+        </div>
+    </div>
+
+    <br>
+
+    <label for="messege">Messege</label>
+    <textarea name="messege" id="" cols="30" rows="10"></textarea>
+
+    <br>
+    <span>Or email me at: <u>shalevhaimovitzemail@gmail.com</u> (for now, i.e shalev@daslastic.xyz incoming)</span>
+
+    <button name="submit" type="submit">Submit</button>
+</form>
+
+{% endblock content %}

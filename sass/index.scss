@@ -16,11 +16,7 @@
 
 :root {
     --text_color: white; 
-    --site_bg: rgb(10, 0, 44);
-    //--site_bg: rgb(44, 0, 44);
-    //--site_bg: linear-gradient(to right, #24243e, #302b63, #24243e);
     --site_bg: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    //--bg: #010101;
     --bg: linear-gradient(45deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 1) 100%) fixed;
     --accent: rgb(137, 230, 168);
 }
@@ -29,10 +25,10 @@
     box-sizing: border-box;
 }
 
-h1, h2 {
+h1, h2, button {
     @include bold;
 }
-p, h3, a {
+p, h3, a, label, small, textarea, input {
     @include regular;
 }
 
@@ -90,15 +86,22 @@ p, span {
     line-height: 1.7em;
 }
 
-small {
+small, label {
     font-size: .75em;
-    @include regular;
+}
+
+label {
+    display: block;
+    margin-bottom: 1em;
 }
 
 p {
-    //text-indent: 3em;
+    text-indent: 3em;
     font-size: .9em;
     margin: 1.8em 0;
+    img {
+        margin-left: -3em;
+    }
 }
 
 a {
@@ -119,6 +122,28 @@ br {
 
 img {
     width: 100%;
+}
+
+input, textarea, button {
+    display: block;
+    width: 100%;
+    padding: 0.5em .8em;
+    background: transparent;
+    color: var(--text_color);
+    font-size: .9em;
+    outline: 0;
+    border: none;
+    background-color: #010101;
+    border-radius: .5em;
+}
+
+input, textarea {
+    border-bottom: .1em solid var(--text_color);
+}
+
+button {
+    cursor: pointer;
+    margin-top: 2em;
 }
 
 h1:first-child, h2:first-child, h3:first-child, p:first-child, ul:first-child {
@@ -143,7 +168,7 @@ h1:last-child, h2:last-child, h3:last-child, p:last-child, ul:last-child {
 
 ::-webkit-scrollbar {
     width: .7em;
-    background: var(--primary);
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
