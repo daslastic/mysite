@@ -1,6 +1,6 @@
 +++
 title = "Fact"
-description = "a very important fact"
+description = "A very important fact"
 date = 2022-03-11
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "Aeryth"
-description = ""
+description = "A game based around an Entity named Aeryth"
 date = 2022-03-13
 +++
 
