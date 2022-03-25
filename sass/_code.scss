@@ -1,0 +1,22 @@
+pre {
+	border-radius: .5em;
+	overflow: scroll;
+	background: transparent !important;
+	width: 100%;
+
+	&[data-lineos] {
+		padding: 1em 0;
+	}
+
+	// line number
+	td:first-child {
+		padding: 0 1em 0 0;
+		color: grey;
+		user-select: none;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+}

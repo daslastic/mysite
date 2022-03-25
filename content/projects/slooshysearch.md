@@ -1,5 +1,5 @@
 +++
-title = "SlooshySearch"
+title = "slooshysearch"
 description = "A different search engine exterior"
 date = 2021-12-20
 +++

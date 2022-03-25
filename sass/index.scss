@@ -35,13 +35,14 @@ p, h3, a, label, small, textarea, input {
 html {
     background: var(--site_bg);
     background-color: black;
+	min-height: 100vh;
     @include regular;
 }
 
 body {
     color: var(--text_color);
     margin: 0;
-    max-width: 58em;
+    max-width: 63em;
     margin: 1em auto;
     padding: 1em;
     width: 100%;
@@ -49,7 +50,7 @@ body {
 }
 
 html {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 h1 {
@@ -177,3 +178,4 @@ h1:last-child, h2:last-child, h3:last-child, p:last-child, ul:last-child {
 }
 
 @import "base";
+@import "code";

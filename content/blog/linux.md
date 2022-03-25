@@ -1,6 +1,6 @@
 +++
 title = "ArchLinux"
-description = "More specifically why I use Linux"
+description = "Why do I use Linux?"
 date = 2022-03-13
 +++
 
